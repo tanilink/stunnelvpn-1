@@ -50,7 +50,7 @@ wget -q -O /usr/bin/running "https://raw.githubusercontent.com/RifkyStoretunelin
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/restart.sh" && chmod +x /usr/bin/restart
 wget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/menu-udp.sh" && chmod +x /usr/bin/menu-udp
 wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/menu-bot.sh" && chmod +x /usr/bin/menu-bot
-wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/addhost.sh"
+wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/addhost.sh" && chmod +x /usr/bin/addhost
 #wget -qwget -q -O /usr/bin/menu-udp "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/menu-udp.sh" && chmod +x /usr/bin/menu-udp
 echo -e "sleep 3 "
 clear
