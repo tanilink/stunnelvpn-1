@@ -36,9 +36,10 @@ rm nsdomain
 clear
 #figlet "slowdns" | lolcat
 #read -rp "Masukkan Nameserver: " -e sub
+Host=inject.cloud
 sub=ns.`(</dev/urandom tr -dc a-z0-9 | head -c5)`
 #sub=ns.`</dev/urandom tr -dc x-z0-9 | head -c4`
-SUB_DOMAIN=${sub}
+SUB_DOMAIN=${sub}.inject.cloud
 NS_DOMAIN=${SUB_DOMAIN}
 echo $NS_DOMAIN > /root/nsdomain
 
