@@ -29,7 +29,7 @@ wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Agunxzzz/XrayCol/
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/limit-speed.sh"
 wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/menu-bot.sh"
 wget -q -O /usr/bin/stopbot "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/stopbot.sh"
-wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Themes/theme.sh"
+wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Themes/thema.sh"
 
 # //
 wget -q -O /usr/bin/about "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/about.sh"
