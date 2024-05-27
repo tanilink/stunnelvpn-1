@@ -64,7 +64,7 @@ case $opt in
 16) clear ; menu-theme ;;
 00) clear ; about ;;
 77) clear ; setting ;;
-88) clear ; wget -q "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/upsc.sh" | bash ;;
+88) clear ; upsc ;;
 *) clear ; dashboard ;;
 esac
 
