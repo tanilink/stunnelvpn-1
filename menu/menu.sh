@@ -63,7 +63,7 @@ case $opt in
 16) clear ; menu-theme ;;
 00) clear ; about ;;
 77) clear ; setting ;;
-88) clear ; wget https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/upsc.sh && chmod +x upsc.sh && ./upsc.sh ;;
+88) clear ; curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/upsc.sh" | bash ;;
 *) clear ; dashboard ;;
 esac
 
