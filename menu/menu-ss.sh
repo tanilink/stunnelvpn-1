@@ -20,7 +20,7 @@ LIGHT='\033[0;37m'
 ###########- END COLOR CODE -##########
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS > /root/tmp
+    curl -sS https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -38,7 +38,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -55,7 +55,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -379,7 +379,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[31m  • You have no existing clients! \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -421,7 +421,7 @@ echo -e "\e[96;1m   Days Added  : $masaaktif Days"
 echo -e "\e[96;1m   Expired On  : $exp4"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo ""
@@ -442,7 +442,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[91;1m       Username Is Wrong \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -470,7 +470,7 @@ echo -e "\e[96;1m  • Client Name : $user \e[0m"
 echo -e "\e[96;1m  • Expired On  : $exp  \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -522,7 +522,7 @@ done
 rm -rf /tmp/other.txt
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -541,7 +541,7 @@ echo -e "\e[37;1m [04] • USER ONLINE\e[0m"
 echo -e "\e[31;1m [00] • GO BACK    \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Just Input :  "  opt
