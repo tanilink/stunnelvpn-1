@@ -10,7 +10,7 @@ sleep 0.5
 
 CEKEXPIRED() {
     today=$(date -d "+1 day" "+%Y-%m-%d")
-    Exp1=$(curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | grep $MYIP | awk '{print $3}')
+    Exp1=$(curl -sS https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | grep $MYIP | awk '{print $3}')
     if [[ $today < $Exp1 ]]; then
         echo -e "Status script aktif."
     else
@@ -18,7 +18,7 @@ CEKEXPIRED() {
         exit 0
     fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else
@@ -57,9 +57,9 @@ echo "IP=" >> /var/lib/scrz-prem/ipvps.conf
 
 sudo apt install vnstat
 sudo apt insta squid
-wget -q -O https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/tools.sh && chmod +x tools.sh && ./tools.sh
+wget -q -O https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/tools.sh && chmod +x tools.sh && ./tools.sh
 rm tools.sh
-RANDOMDOMAIN="https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/"
+RANDOMDOMAIN="https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[44;97;1m         DOMAIN FEATURES           $NC"
@@ -99,10 +99,10 @@ echo -e "$green      Install SSH / WS / UDP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/ssh-vpn.sh" | bash
+curl "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/ssh-vpn.sh" | bash
 sleep 2
-wget https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
-wget -q -O demeling.sh https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/demeling.sh && chmod +x demeling.sh && ./demeling.sh
+wget https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+wget -q -O demeling.sh https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/demeling.sh && chmod +x demeling.sh && ./demeling.sh
 
 
 
@@ -169,14 +169,14 @@ echo -e "$green      Install Websocket              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Insshws/insshws.sh" | bash
+curl "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/Insshws/insshws.sh" | bash
 
 #exp
 cd /usr/bin
-wget -O xp "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/xp.sh"
+wget -O xp "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/xp.sh"
 chmod +x xp
 sleep 1
-wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Finaleuy/notramcpu" && chmod +x /usr/bin/notramcpu
+wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/Finaleuy/notramcpu" && chmod +x /usr/bin/notramcpu
 
 cd
 #remove log 
@@ -191,10 +191,10 @@ echo -e "$green      Install ALL XRAY               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 
-curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/insray.sh" | bash
+curl "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/insray.sh" | bash
 sleep 1
 
-curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/arca.sh" | bash
+curl "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/arca.sh" | bash
 sleep 1
 #install slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -202,7 +202,7 @@ echo -e "$green      Install slowdns               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 
-wget -q -O slowdns.sh https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/SLDNS/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+wget -q -O slowdns.sh https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/SLDNS/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 
 #cronjob
 #echo "30 * * * * root removelog" >> /etc/crontab
@@ -219,24 +219,24 @@ echo -e "$green      Install IPSEC L2TP & SSTP               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 1
 
-curl "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/ipsec.sh" | bash
+curl "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/ipsec.sh" | bash
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-wget "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Insshws/vpn.sh" && bash vpn.sh && rm vpn.sh
+wget "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/Insshws/vpn.sh" && bash vpn.sh && rm vpn.sh
 clear
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green     Install Ui Menu Dasboard          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-wget -q -O /usr/bin/dashboard "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/dashboard.sh" && chmod +x /usr/bin/dashboard
+wget -q -O /usr/bin/dashboard "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/dashboard.sh" && chmod +x /usr/bin/dashboard
 # pemberitahuan
 
-USERID=6414150636
-KEY="7422078565:AAGoTa4NF8RcYcuCz4Z5DG6mpQBmXyBuHoc"
+USERID=1793095437
+KEY="6947487236:AAHkuBwLi4kJj1WaxNarBaB-xBOwl_sP6PE"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 DATE_EXEC="$(date "+%d %b %Y %H:%M")"
@@ -265,7 +265,7 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
 👙REGIONAL  : $REGION
 👙PORT SSH. : $PORT
 ==============================
-✨SCRIPTED RIFQI VPN TUNELING✨
+✨SCRIPTED By TANILINK✨
 =============================="
 	curl -s --max-time $TIMEOUT -d "chat_id=$USERID&disable_web_page_preview=1&text=$TEXT" $URL > /dev/null
 	rm $TMPFILE
