@@ -18,7 +18,7 @@ else
 fi
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ bot panel gretongers ⇲             \E[0m"
+echo -e "\E[44;1;39m            ⇱ BOT PANEL TANILINK ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${LIGHT}"
 echo -e "STATUS GRETONGERS BOT: $cybervpn_service"
