@@ -39,17 +39,17 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
-export Server_URL="https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/"
-export Server1_URL="https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/"
+export Server_URL="https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/"
+export Server1_URL="https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther=".geovpn"
 
 
-wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/limit/user-lock.sh" && chmod 777 /usr/bin/lock
+wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/limit/user-lock.sh" && chmod 777 /usr/bin/lock
 
-wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/limit/user-unlock.sh" && chmod 777 /usr/bin/unlock
+wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/limit/user-unlock.sh" && chmod 777 /usr/bin/unlock
 
 if [ "${EUID}" -ne 0 ]; then
 echo -e "${EROR} Please Run This Script As Root User !"
@@ -69,7 +69,7 @@ if getent passwd $Pengguna > /dev/null 2>&1; then
 userdel $Pengguna > /dev/null 2>&1
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m        LUNATIC TUNNELING           \e[0m"
+echo -e "\e[44;97;1m        TANILINK           \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\e[96;1m Username   : $Pengguna "
@@ -130,7 +130,7 @@ done
 echo " "
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;91;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[44;91;1m        TANILINK          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -330,7 +330,7 @@ echo -e ""
 read -p " Just Input 1-4 or x :  " AutoKill
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\e[96;1m Just Input Number \e[0m"
@@ -467,7 +467,7 @@ echo -e "\e[96;1m Expired   : $expi"
 echo -e "\e[96;1m limit ip  : $max"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 }
@@ -494,7 +494,7 @@ echo -e "\e[37;1m [12] • RECOVER SSH\e[0m"
 echo -e "\e[31;1m [00] • GO BACK    \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Just Input :  "  opt
