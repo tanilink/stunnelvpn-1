@@ -3,7 +3,7 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 colornow=$(cat /etc/ssnvpn/theme/color.conf)         NC="\e[0m"
 RED='\e[1;32m'                                       COLOR1='\033[0;35m'
-BURIQ () {                                           curl -sS  https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS > /root/tmp
+BURIQ () {                                           curl -sS  https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS > /root/tmp
 data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
 for user in "${data[@]}"
 do
@@ -20,7 +20,7 @@ done
 rm -f /root/tmp
 }
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS curl -sS  https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS curl -sS  https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 Bloman () {
@@ -35,7 +35,7 @@ fi
 }
 PERMISSION () {
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IZIN=$(curl -sS curl -sS  https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS curl -sS  https://raw.githubusercontent.com/tanilink/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
 if [ "$MYIP" = "$IZIN" ]; then
 Bloman
 else
@@ -147,7 +147,7 @@ echo -e "\e[32;1m   • Successfully"
 echo -e "\e[96;1m   • Client Name : $user"
 echo -e "\e[96;1m   • Expired On  : $exp"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -187,7 +187,7 @@ echo -e "\e[32;1m  • Successfully"
 echo -e "\e[96;1m  • Client Name : $user"
 echo -e "\e[96;1m  • Expired On  : $exp"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -246,7 +246,7 @@ echo -e "\e[32;1m   • Successfully"
 echo -e "\e[96;1m   • Client Name : $user"
 echo -e "\e[96;1m   • Expired On  : $exp"
 echo -e "\e[96;1m   • uuid        : $uuid"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -261,7 +261,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 NUMBER_OF_CLIENTS=$(grep -c -E "^#! " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "\e[31;1m • You have no existing clients!"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -319,7 +319,7 @@ echo -e "\e[96;1m   Limit ip    : $iplimit IP"
 echo -e "\e[96;1m   Limit Quota : $Quota GB"
 echo -e "\e[96;1m   Expired On  : $exp4"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -387,7 +387,7 @@ fi
 }
 function addtrojan(){
 domain=$(cat /etc/xray/domain)
-RifkyStoretuneling
+tanilink
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[44;97;1m       CREATE TITLE TROJAN         \e[0m"
@@ -400,7 +400,7 @@ if [ -z $user ]; then
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[91;1m   [Error] Username cannot be empty \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-RifkyStoretuneling
+tanilink
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
@@ -507,7 +507,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC} "
 echo -e "Format OpenClash : http://${domain}:81/trojan-$user.yaml"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • RIFQI VPN TUNELING•                  $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • TANILINK •                  $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 cat >/tmp/trojan/$user.txt << EOF
@@ -546,7 +546,7 @@ echo -e "\e[37;1m [08] • RECOVE AACOUNT    \e[0m"
 echo -e "\e[31;1m [00] • GO BACK           \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       TANILINK         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Just Input :  "  opt
