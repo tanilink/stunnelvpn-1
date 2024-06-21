@@ -1,5 +1,5 @@
 #!/bin/bash
-# Modifed By Lunatic Tunneling 
+# Modifed By TANILINK 
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -44,7 +44,7 @@ echo -e "3. Auto Banned After 120 Minutes"
 echo -e "4. Turn Off Auto Banned/MultiLogin"
 echo -e "5. Exit"
 echo -e "${PURPLE}======================================"
-                echo -e "${LIGHT}       Auto Banned By Lunatic Tunneling "
+                echo -e "${LIGHT}       Auto Banned By TANILINK "
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                 echo -e "${LIGHT}"
                 echo -e ""
@@ -67,7 +67,7 @@ case $AutoKill in
                 echo -e "      Auto Banned Every     : 5 Minutes"      
                 echo -e ""
                 echo -e "${PURPLE}======================================"
-                echo -e "${LIGHT}       Auto Banned By Lunatic Tunneling "
+                echo -e "${LIGHT}       Auto Banned By TANILINK "
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                 exit                                                                  
                 ;;
@@ -86,7 +86,7 @@ echo -e ""
                 echo -e "      Auto Banned Every     : 10 Minutes"
                 echo -e ""
                 echo -e "${PURPLE}======================================"
-                echo -e "${LIGHT}       Auto Banned By Lunatic Tunneling "
+                echo -e "${LIGHT}       Auto Banned By TANILINK "
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                 exit
                 ;;
@@ -105,7 +105,7 @@ echo -e ""
                 echo -e "      Auto Banned Every     : 120 Minutes"
                 echo -e ""
                 echo -e "${PURPLE}======================================"
-                echo -e "${LIGHT}       Auto Banned By Lunatic Tunneling "
+                echo -e "${LIGHT}       Auto Banned By TANILINK "
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                  exit
                 ;;
@@ -118,7 +118,7 @@ echo -e ""
                 echo -e "${LIGHT}    Auto Banned MultiLogin Turned ${RED}OFF  "
                 echo -e ""
                 echo -e "${PURPLE}======================================"
-                echo -e "${LIGHT}       Auto Banned By Lunatic Tunneling "
+                echo -e "${LIGHT}       Auto Banned By TANILINK "
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                    exit
                 ;;
