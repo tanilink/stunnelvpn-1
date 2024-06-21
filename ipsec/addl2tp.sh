@@ -92,7 +92,7 @@ else
 domain=$IP2
 fi
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[44;97;1m        TANILINK          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -144,7 +144,7 @@ echo -e ""
  Created    : $hariini
  Expired    : $exp
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[44;97;1m        TANILINK          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 EOF
