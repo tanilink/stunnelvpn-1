@@ -61,6 +61,6 @@ echo -e "\e[96;1m Username  : $user  \e[0m"
 echo -e "\e[96;1m Expired   : $exp   \e[0m"
 echo -e ""
 echo -e "\e[33;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[33;1m│\e[44;97;1m            • RIPQI VPN STORE •              \e[0m"             
+echo -e "\e[33;1m│\e[44;97;1m            • TANILINK •              \e[0m"             
 echo -e "\e[33;1m└─────────────────────────────────────────────────┘\e[0m"
 
