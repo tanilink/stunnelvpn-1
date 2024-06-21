@@ -6,7 +6,7 @@ blue='\e[34m'
 NC='\e[0m'
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m       RIFQI VPN TUNNELING         \e[0m"
+echo -e "\e[44;97;1m       Tanilink         \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -25,7 +25,7 @@ clear
         echo " ";
         echo -e " \e[36m※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※
  ※                                 ※
- ※\e[0m   WELCOME MY SYSTEM RIFQI VPN TUNNELING \e[36m※
+ ※\e[0m   WELCOME MY SYSTEM TANILINK VPN TUNNELING \e[36m※
  ※                                 ※
  ※\e[0m   \e[35mWhatsApp\e[0m    \e[36m:\e[0m \e[33m+6287704622943\e[0m    \e[36m※
  ※\e[0m   \e[35mTelegram\e[0m    \e[36m:\e[0m \e[33m@LuanticTunnel\e[0m      \e[36m※
@@ -40,7 +40,7 @@ clear
   echo -e "  \e[34m※\e[0m Username : ${blue}$username${NC}";
   echo -e "  \e[32m※\e[0m Status   : ${green}UNLOCKED${NC}";
   echo " ";
-  echo " ★ POWER BY RIFQI BACKEND";
+  echo " ★ POWER BY TANILINK BACKEND";
   echo " ";
         echo " ";
         echo " ";
