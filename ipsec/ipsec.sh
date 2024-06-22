@@ -297,14 +297,14 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/addpptp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
-wget -O /var/lib/crot/data-user-l2tp "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/l2tp-user.sh"
-wget -O /var/lib/crot/data-user-pptp "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipsec/pptp-user"
+wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget -O /usr/bin/addpptp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/addpptp.sh && chmod +x /usr/bin/addpptp
+wget -O /usr/bin/delpptp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/delpptp.sh && chmod +x /usr/bin/delpptp
+wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+wget -O /var/lib/crot/data-user-l2tp "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/l2tp-user.sh"
+wget -O /var/lib/crot/data-user-pptp "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipsec/pptp-user"
 touch /var/lib/crot/data-user-l2tp
 touch /var/lib/crot/data-user-pptp
 rm -f /root/ipsec.sh
