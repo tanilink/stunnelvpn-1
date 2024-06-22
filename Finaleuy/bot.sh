@@ -2,7 +2,7 @@
 # use sed to parse JSON from ipinfo.io
 # you can get your user_id by writing to @get_id_bot
 USERID=$(cat /root/id)
-KEY="7138944549:AAGhlUNLKtVvv3JUZm3uX-GPWL3eMaO_M_4"
+KEY="6947487236:AAHkuBwLi4kJj1WaxNarBaB-xBOwl_sP6PE"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 DATE_EXEC="$(date "+%d %b %Y %H:%M")"
