@@ -29,13 +29,13 @@ read -rp " Just Input id Telegram : " nenen
 echo "$nenen" >> /root/id
 
 cd /usr/bin
-wget -O mautobackup "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/autobackup.sh"
-wget -O /usr/bin/mbackup "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/backup.sh"
-wget -O /usr/bin/mrestore "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/restore.sh"
+wget -O mautobackup "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/backup/autobackup.sh"
+wget -O /usr/bin/mbackup "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/backup/backup.sh"
+wget -O /usr/bin/mrestore "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/backup/restore.sh"
 
 
 
-wget -O mlimitspeed "https://raw.githubusercontent.com/LT-BACKEND/stunnelvpn/momok/backup/limitspeed.sh"
+wget -O mlimitspeed "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/backup/limitspeed.sh"
 chmod +x mautobackup
 chmod +x /usr/bin/mbackup
 chmod +x /usr/bin/mrestore
