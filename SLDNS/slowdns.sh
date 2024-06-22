@@ -5,14 +5,14 @@ mkdir /var/lib/ssnvpn-pro/
 rm -f /usr/bin/menu-ssh
 
 
-wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/ipvps.conf"
-wger -q -O /usr/bin/tendang "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/limit/tendang.sh"
-#wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/limit/autokill.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/menu-ssh.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/menu/restart.sh"
+wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/ipvps.conf"
+wger -q -O /usr/bin/tendang "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/limit/tendang.sh"
+#wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/limit/autokill.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/menu-ssh.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/menu/restart.sh"
 chmod +x /usr/bin/restart
-wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Finaleuy/bot.sh"
-wget -q -O /root/chat "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/Finaleuy/chatid.sh"
+wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/Finaleuy/bot.sh"
+wget -q -O /root/chat "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/Finaleuy/chatid.sh"
 chmod 777 /root/chat
 chmod 777 /usr/bin/bot
 
@@ -68,10 +68,10 @@ service cron restart
 #konfigurasi slowdns
 rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
-wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/SLDNS/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/SLDNS/server.pub"
-wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/SLDNS/sldns-server"
-wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/RifkyStoretuneling/stunnelvpn/momok/SLDNS/sldns-client"
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/SLDNS/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/SLDNS/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/SLDNS/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/tanilink/stunnelvpn-1/momok/SLDNS/sldns-client"
 cd
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
